@@ -1,0 +1,285 @@
+Input: <{Object_B} --> [blue]>. Priority=1.000000 Stamp=[1] Truth: frequency=1.000000, confidence=0.900000
+Selected: <{Object_B} --> [blue]>. Priority=1.000000 Stamp=[1] Truth: frequency=1.000000, confidence=0.900000
+Input: <{Object_A} --> [active]>. Priority=1.000000 Stamp=[2] Truth: frequency=1.000000, confidence=0.900000
+Selected: <{Object_A} --> [active]>. Priority=1.000000 Stamp=[2] Truth: frequency=1.000000, confidence=0.900000
+Input: <{Object_E} --> [active]>. Priority=1.000000 Stamp=[3] Truth: frequency=1.000000, confidence=0.900000
+Selected: <{Object_E} --> [active]>. Priority=1.000000 Stamp=[3] Truth: frequency=1.000000, confidence=0.900000
+Derived: <{Object_A} --> {Object_E}>. Priority=0.217127 Stamp=[3,2] Truth: frequency=1.000000, confidence=0.447514
+Derived: <{Object_E} --> {Object_A}>. Priority=0.217127 Stamp=[3,2] Truth: frequency=1.000000, confidence=0.447514
+Derived: <{Object_A} <-> {Object_E}>. Priority=0.217127 Stamp=[3,2] Truth: frequency=1.000000, confidence=0.447514
+Derived: <{Object_E} <-> {Object_A}>. Priority=0.217127 Stamp=[3,2] Truth: frequency=1.000000, confidence=0.447514
+Derived: <{Object_E Object_A} --> [active]>. Priority=0.271500 Stamp=[3,2] Truth: frequency=1.000000, confidence=0.810000
+Derived: <{Object_A Object_E} --> [active]>. Priority=0.271500 Stamp=[3,2] Truth: frequency=1.000000, confidence=0.810000
+Derived: <<{Object_A} --> [$1]> ==> <{Object_E} --> [$1]>>. Priority=0.162845 Stamp=[3,2] Truth: frequency=1.000000, confidence=0.447514
+Derived: <<{Object_E} --> [$1]> ==> <{Object_A} --> [$1]>>. Priority=0.162845 Stamp=[3,2] Truth: frequency=1.000000, confidence=0.447514
+Input: <{Object_D} --> [not_hidden]>. Priority=1.000000 Stamp=[4] Truth: frequency=1.000000, confidence=0.900000
+Selected: <{Object_D} --> [not_hidden]>. Priority=1.000000 Stamp=[4] Truth: frequency=1.000000, confidence=0.900000
+Input: <{Object_D} --> [not_hidden]>. Priority=1.000000 Stamp=[5] Truth: frequency=1.000000, confidence=0.900000
+Revised: <{Object_D} --> [not_hidden]>. Priority=1.000000 Stamp=[4,5] Truth: frequency=1.000000, confidence=0.947368
+Selected: <{Object_D} --> [not_hidden]>. Priority=1.000000 Stamp=[5] Truth: frequency=1.000000, confidence=0.900000
+Input: <{Object_C} --> [safe]>. Priority=1.000000 Stamp=[6] Truth: frequency=1.000000, confidence=0.900000
+Selected: <{Object_C} --> [safe]>. Priority=1.000000 Stamp=[6] Truth: frequency=1.000000, confidence=0.900000
+Input: <{Object_B} --> [blue]>. Priority=1.000000 Stamp=[7] Truth: frequency=1.000000, confidence=0.900000
+Revised: <{Object_B} --> [blue]>. Priority=1.000000 Stamp=[1,7] Truth: frequency=1.000000, confidence=0.947368
+Selected: <{Object_B} --> [blue]>. Priority=1.000000 Stamp=[7] Truth: frequency=1.000000, confidence=0.900000
+Input: <{Signal_1} --> [active]>. Priority=1.000000 Stamp=[8] Truth: frequency=1.000000, confidence=0.900000
+Selected: <{Signal_1} --> [active]>. Priority=1.000000 Stamp=[8] Truth: frequency=1.000000, confidence=0.900000
+Derived: <{Object_A} --> {Signal_1}>. Priority=0.128211 Stamp=[8,2] Truth: frequency=1.000000, confidence=0.447514
+Derived: <{Signal_1} --> {Object_A}>. Priority=0.128211 Stamp=[8,2] Truth: frequency=1.000000, confidence=0.447514
+Derived: <{Object_A} <-> {Signal_1}>. Priority=0.128211 Stamp=[8,2] Truth: frequency=1.000000, confidence=0.447514
+Derived: <{Signal_1} <-> {Object_A}>. Priority=0.128211 Stamp=[8,2] Truth: frequency=1.000000, confidence=0.447514
+Derived: <{Signal_1 Object_A} --> [active]>. Priority=0.160318 Stamp=[8,2] Truth: frequency=1.000000, confidence=0.810000
+Derived: <{Object_A Signal_1} --> [active]>. Priority=0.160318 Stamp=[8,2] Truth: frequency=1.000000, confidence=0.810000
+Derived: <<{Object_A} --> [$1]> ==> <{Signal_1} --> [$1]>>. Priority=0.096159 Stamp=[8,2] Truth: frequency=1.000000, confidence=0.447514
+Derived: <<{Signal_1} --> [$1]> ==> <{Object_A} --> [$1]>>. Priority=0.096159 Stamp=[8,2] Truth: frequency=1.000000, confidence=0.447514
+Derived: <{Object_E} --> {Signal_1}>. Priority=0.142457 Stamp=[8,3] Truth: frequency=1.000000, confidence=0.447514
+Derived: <{Signal_1} --> {Object_E}>. Priority=0.142457 Stamp=[8,3] Truth: frequency=1.000000, confidence=0.447514
+Derived: <{Object_E} <-> {Signal_1}>. Priority=0.142457 Stamp=[8,3] Truth: frequency=1.000000, confidence=0.447514
+Derived: <{Signal_1} <-> {Object_E}>. Priority=0.142457 Stamp=[8,3] Truth: frequency=1.000000, confidence=0.447514
+Derived: <{Signal_1 Object_E} --> [active]>. Priority=0.178131 Stamp=[8,3] Truth: frequency=1.000000, confidence=0.810000
+Derived: <{Object_E Signal_1} --> [active]>. Priority=0.178131 Stamp=[8,3] Truth: frequency=1.000000, confidence=0.810000
+Derived: <<{Object_E} --> [$1]> ==> <{Signal_1} --> [$1]>>. Priority=0.106843 Stamp=[8,3] Truth: frequency=1.000000, confidence=0.447514
+Derived: <<{Signal_1} --> [$1]> ==> <{Object_E} --> [$1]>>. Priority=0.106843 Stamp=[8,3] Truth: frequency=1.000000, confidence=0.447514
+Derived: <{Object_E Object_A} --> {Signal_1}>. Priority=0.037986 Stamp=[8,3,2] Truth: frequency=1.000000, confidence=0.421631
+Derived: <{Signal_1} --> {Object_E Object_A}>. Priority=0.037986 Stamp=[8,3,2] Truth: frequency=1.000000, confidence=0.421631
+Derived: <{Object_E Object_A} <-> {Signal_1}>. Priority=0.037986 Stamp=[8,3,2] Truth: frequency=1.000000, confidence=0.421631
+Derived: <{Signal_1} <-> {Object_E Object_A}>. Priority=0.037986 Stamp=[8,3,2] Truth: frequency=1.000000, confidence=0.421631
+Derived: <{Signal_1 (Object_E . Object_A)} --> [active]>. Priority=0.041721 Stamp=[8,3,2] Truth: frequency=1.000000, confidence=0.729000
+Derived: <{(Object_E . Object_A) Signal_1} --> [active]>. Priority=0.041721 Stamp=[8,3,2] Truth: frequency=1.000000, confidence=0.729000
+Derived: <<{Object_E Object_A} --> [$1]> ==> <{Signal_1} --> [$1]>>. Priority=0.028489 Stamp=[8,3,2] Truth: frequency=1.000000, confidence=0.421631
+Derived: <<{Signal_1} --> [$1]> ==> <{Object_E Object_A} --> [$1]>>. Priority=0.028489 Stamp=[8,3,2] Truth: frequency=1.000000, confidence=0.421631
+Derived: <{Object_A Object_E} --> {Signal_1}>. Priority=0.037986 Stamp=[8,3,2] Truth: frequency=1.000000, confidence=0.421631
+Derived: <{Signal_1} --> {Object_A Object_E}>. Priority=0.037986 Stamp=[8,3,2] Truth: frequency=1.000000, confidence=0.421631
+Derived: <{Object_A Object_E} <-> {Signal_1}>. Priority=0.037986 Stamp=[8,3,2] Truth: frequency=1.000000, confidence=0.421631
+Derived: <{Signal_1} <-> {Object_A Object_E}>. Priority=0.037986 Stamp=[8,3,2] Truth: frequency=1.000000, confidence=0.421631
+Derived: <{Signal_1 (Object_A . Object_E)} --> [active]>. Priority=0.041721 Stamp=[8,3,2] Truth: frequency=1.000000, confidence=0.729000
+Derived: <{(Object_A . Object_E) Signal_1} --> [active]>. Priority=0.041721 Stamp=[8,3,2] Truth: frequency=1.000000, confidence=0.729000
+Derived: <<{Object_A Object_E} --> [$1]> ==> <{Signal_1} --> [$1]>>. Priority=0.028489 Stamp=[8,3,2] Truth: frequency=1.000000, confidence=0.421631
+Derived: <<{Signal_1} --> [$1]> ==> <{Object_A Object_E} --> [$1]>>. Priority=0.028489 Stamp=[8,3,2] Truth: frequency=1.000000, confidence=0.421631
+Input: <{Object_B} --> [blue]>. Priority=1.000000 Stamp=[9] Truth: frequency=1.000000, confidence=0.900000
+Revised: <{Object_B} --> [blue]>. Priority=1.000000 Stamp=[1,9,7] Truth: frequency=1.000000, confidence=0.964286
+Selected: <{Object_A Object_E} --> [active]>. Priority=0.271337 Stamp=[3,2] Truth: frequency=1.000000, confidence=0.810000
+Derived: <<{Signal_1} --> [$1]> ==> <{Object_A Object_E} --> [$1]>>. Priority=0.043396 Stamp=[3,8,2] Truth: frequency=1.000000, confidence=0.421631
+Derived: <<{Object_A Object_E} --> [$1]> ==> <{Signal_1} --> [$1]>>. Priority=0.043396 Stamp=[3,8,2] Truth: frequency=1.000000, confidence=0.421631
+Input: <{Signal_2} --> [blue]>. Priority=1.000000 Stamp=[10] Truth: frequency=1.000000, confidence=0.900000
+Selected: <{Signal_2} --> [blue]>. Priority=1.000000 Stamp=[10] Truth: frequency=1.000000, confidence=0.900000
+Derived: <{Object_B} --> {Signal_2}>. Priority=0.219694 Stamp=[10,1,9,7] Truth: frequency=1.000000, confidence=0.464627
+Derived: <{Signal_2} --> {Object_B}>. Priority=0.219694 Stamp=[10,1,9,7] Truth: frequency=1.000000, confidence=0.464627
+Derived: <{Object_B} <-> {Signal_2}>. Priority=0.219694 Stamp=[10,1,9,7] Truth: frequency=1.000000, confidence=0.464627
+Derived: <{Signal_2} <-> {Object_B}>. Priority=0.219694 Stamp=[10,1,9,7] Truth: frequency=1.000000, confidence=0.464627
+Derived: <{Signal_2 Object_B} --> [blue]>. Priority=0.280179 Stamp=[10,1,9,7] Truth: frequency=1.000000, confidence=0.867857
+Derived: <{Object_B Signal_2} --> [blue]>. Priority=0.280179 Stamp=[10,1,9,7] Truth: frequency=1.000000, confidence=0.867857
+Derived: <<{Object_B} --> [$1]> ==> <{Signal_2} --> [$1]>>. Priority=0.164771 Stamp=[10,1,9,7] Truth: frequency=1.000000, confidence=0.464627
+Derived: <<{Signal_2} --> [$1]> ==> <{Object_B} --> [$1]>>. Priority=0.164771 Stamp=[10,1,9,7] Truth: frequency=1.000000, confidence=0.464627
+Input: <{Object_G} --> [safe]>. Priority=1.000000 Stamp=[11] Truth: frequency=1.000000, confidence=0.900000
+Selected: <{Object_G} --> [safe]>. Priority=1.000000 Stamp=[11] Truth: frequency=1.000000, confidence=0.900000
+Derived: <{Object_C} --> {Object_G}>. Priority=0.142457 Stamp=[11,6] Truth: frequency=1.000000, confidence=0.447514
+Derived: <{Object_G} --> {Object_C}>. Priority=0.142457 Stamp=[11,6] Truth: frequency=1.000000, confidence=0.447514
+Derived: <{Object_C} <-> {Object_G}>. Priority=0.142457 Stamp=[11,6] Truth: frequency=1.000000, confidence=0.447514
+Derived: <{Object_G} <-> {Object_C}>. Priority=0.142457 Stamp=[11,6] Truth: frequency=1.000000, confidence=0.447514
+Derived: <{Object_G Object_C} --> [safe]>. Priority=0.178131 Stamp=[11,6] Truth: frequency=1.000000, confidence=0.810000
+Derived: <{Object_C Object_G} --> [safe]>. Priority=0.178131 Stamp=[11,6] Truth: frequency=1.000000, confidence=0.810000
+Derived: <<{Object_C} --> [$1]> ==> <{Object_G} --> [$1]>>. Priority=0.106843 Stamp=[11,6] Truth: frequency=1.000000, confidence=0.447514
+Derived: <<{Object_G} --> [$1]> ==> <{Object_C} --> [$1]>>. Priority=0.106843 Stamp=[11,6] Truth: frequency=1.000000, confidence=0.447514
+Input: <{Object_A} --> [active]>. Priority=1.000000 Stamp=[12] Truth: frequency=1.000000, confidence=0.900000
+Revised: <{Object_A} --> [active]>. Priority=1.000000 Stamp=[2,12] Truth: frequency=1.000000, confidence=0.947368
+Selected: <{Object_A} --> [active]>. Priority=1.000000 Stamp=[12] Truth: frequency=1.000000, confidence=0.900000
+Derived: <[active] --> {Object_E}>. Priority=0.018045 Stamp=[12,3,2] Truth: frequency=1.000000, confidence=0.287121
+Derived: <{Object_E} <-> [active]>. Priority=0.018045 Stamp=[12,3,2] Truth: frequency=1.000000, confidence=0.287121
+Derived: <[active] <-> {Object_E}>. Priority=0.018045 Stamp=[12,3,2] Truth: frequency=1.000000, confidence=0.287121
+Derived: <<{$1} --> {Object_E}> ==> <{$1} --> [active]>>. Priority=0.013534 Stamp=[12,3,2] Truth: frequency=1.000000, confidence=0.287121
+Derived: <<{$1} --> [active]> ==> <{$1} --> {Object_E}>>. Priority=0.013534 Stamp=[12,3,2] Truth: frequency=1.000000, confidence=0.287121
+Derived: <<{Object_E Object_A} --> [$1]> ==> <{Object_A} --> [$1]>>. Priority=0.018692 Stamp=[12,3,2] Truth: frequency=1.000000, confidence=0.421631
+Derived: <<{Object_A} --> [$1]> ==> <{Object_E Object_A} --> [$1]>>. Priority=0.018692 Stamp=[12,3,2] Truth: frequency=1.000000, confidence=0.421631
+Derived: <<{Object_A Object_E} --> [$1]> ==> <{Object_A} --> [$1]>>. Priority=0.018692 Stamp=[12,3,2] Truth: frequency=1.000000, confidence=0.421631
+Derived: <<{Object_A} --> [$1]> ==> <{Object_A Object_E} --> [$1]>>. Priority=0.018692 Stamp=[12,3,2] Truth: frequency=1.000000, confidence=0.421631
+Derived: <[active] --> {Signal_1}>. Priority=0.018045 Stamp=[12,8,2] Truth: frequency=1.000000, confidence=0.287121
+Derived: <{Signal_1} <-> [active]>. Priority=0.018045 Stamp=[12,8,2] Truth: frequency=1.000000, confidence=0.287121
+Derived: <[active] <-> {Signal_1}>. Priority=0.018045 Stamp=[12,8,2] Truth: frequency=1.000000, confidence=0.287121
+Derived: <<{$1} --> {Signal_1}> ==> <{$1} --> [active]>>. Priority=0.013534 Stamp=[12,8,2] Truth: frequency=1.000000, confidence=0.287121
+Derived: <<{$1} --> [active]> ==> <{$1} --> {Signal_1}>>. Priority=0.013534 Stamp=[12,8,2] Truth: frequency=1.000000, confidence=0.287121
+Derived: <<{Signal_1 Object_A} --> [$1]> ==> <{Object_A} --> [$1]>>. Priority=0.018692 Stamp=[12,8,2] Truth: frequency=1.000000, confidence=0.421631
+Derived: <<{Object_A} --> [$1]> ==> <{Signal_1 Object_A} --> [$1]>>. Priority=0.018692 Stamp=[12,8,2] Truth: frequency=1.000000, confidence=0.421631
+Derived: <<{Object_A Signal_1} --> [$1]> ==> <{Object_A} --> [$1]>>. Priority=0.018692 Stamp=[12,8,2] Truth: frequency=1.000000, confidence=0.421631
+Derived: <<{Object_A} --> [$1]> ==> <{Object_A Signal_1} --> [$1]>>. Priority=0.018692 Stamp=[12,8,2] Truth: frequency=1.000000, confidence=0.421631
+Derived: <<{Signal_1 (Object_E . Object_A)} --> [$1]> ==> <{Object_A} --> [$1]>>. Priority=0.004583 Stamp=[12,8,3,2] Truth: frequency=1.000000, confidence=0.396172
+Derived: <<{Object_A} --> [$1]> ==> <{Signal_1 (Object_E . Object_A)} --> [$1]>>. Priority=0.004583 Stamp=[12,8,3,2] Truth: frequency=1.000000, confidence=0.396172
+Derived: <<{(Object_E . Object_A) Signal_1} --> [$1]> ==> <{Object_A} --> [$1]>>. Priority=0.004583 Stamp=[12,8,3,2] Truth: frequency=1.000000, confidence=0.396172
+Derived: <<{Object_A} --> [$1]> ==> <{(Object_E . Object_A) Signal_1} --> [$1]>>. Priority=0.004583 Stamp=[12,8,3,2] Truth: frequency=1.000000, confidence=0.396172
+Derived: <<{Signal_1 (Object_A . Object_E)} --> [$1]> ==> <{Object_A} --> [$1]>>. Priority=0.007756 Stamp=[12,8,3,2] Truth: frequency=1.000000, confidence=0.396172
+Derived: <<{Object_A} --> [$1]> ==> <{Signal_1 (Object_A . Object_E)} --> [$1]>>. Priority=0.007756 Stamp=[12,8,3,2] Truth: frequency=1.000000, confidence=0.396172
+Derived: <<{(Object_A . Object_E) Signal_1} --> [$1]> ==> <{Object_A} --> [$1]>>. Priority=0.007756 Stamp=[12,8,3,2] Truth: frequency=1.000000, confidence=0.396172
+Derived: <<{Object_A} --> [$1]> ==> <{(Object_A . Object_E) Signal_1} --> [$1]>>. Priority=0.007756 Stamp=[12,8,3,2] Truth: frequency=1.000000, confidence=0.396172
+Input: <{Object_A} --> [active]>. Priority=1.000000 Stamp=[13] Truth: frequency=1.000000, confidence=0.900000
+Revised: <{Object_A} --> [active]>. Priority=1.000000 Stamp=[2,13,12] Truth: frequency=1.000000, confidence=0.964286
+Selected: <{Signal_2 Object_B} --> [blue]>. Priority=0.280095 Stamp=[10,1,9,7] Truth: frequency=1.000000, confidence=0.867857
+Derived: <{Signal_1} --> {Signal_1}>. Priority=1.000000 Stamp=[8,12,8,2] Truth: frequency=1.000000, confidence=0.258409
+Derived: <{Object_E} --> {Object_E}>. Priority=1.000000 Stamp=[3,12,3,2] Truth: frequency=1.000000, confidence=0.258409
+Input: <{Object_B} --> [blue]>. Priority=1.000000 Stamp=[14] Truth: frequency=1.000000, confidence=0.900000
+Revised: <{Object_B} --> [blue]>. Priority=1.000000 Stamp=[1,14,9,7] Truth: frequency=1.000000, confidence=0.972973
+Selected: <{Object_B Signal_2} --> [blue]>. Priority=0.280067 Stamp=[10,1,9,7] Truth: frequency=1.000000, confidence=0.867857
+Input: <{Object_D} --> [hidden]>. Priority=1.000000 Stamp=[15] Truth: frequency=1.000000, confidence=0.900000
+Selected: <{Object_D} --> [hidden]>. Priority=1.000000 Stamp=[15] Truth: frequency=1.000000, confidence=0.900000
+Derived: <[not_hidden] --> [hidden]>. Priority=0.084858 Stamp=[15,4,5] Truth: frequency=1.000000, confidence=0.460227
+Derived: <[hidden] --> [not_hidden]>. Priority=0.084858 Stamp=[15,4,5] Truth: frequency=1.000000, confidence=0.460227
+Derived: <[not_hidden] <-> [hidden]>. Priority=0.084858 Stamp=[15,4,5] Truth: frequency=1.000000, confidence=0.460227
+Derived: <[hidden] <-> [not_hidden]>. Priority=0.084858 Stamp=[15,4,5] Truth: frequency=1.000000, confidence=0.460227
+Derived: <{Object_D} --> [hidden not_hidden]>. Priority=0.107662 Stamp=[15,4,5] Truth: frequency=1.000000, confidence=0.852632
+Derived: <{Object_D} --> [not_hidden hidden]>. Priority=0.107662 Stamp=[15,4,5] Truth: frequency=1.000000, confidence=0.852632
+Derived: <<{$1} --> [not_hidden]> ==> <{$1} --> [hidden]>>. Priority=0.063644 Stamp=[15,4,5] Truth: frequency=1.000000, confidence=0.460227
+Derived: <<{$1} --> [hidden]> ==> <{$1} --> [not_hidden]>>. Priority=0.063644 Stamp=[15,4,5] Truth: frequency=1.000000, confidence=0.460227
+Input: <{Object_D} --> [not_hidden]>. Priority=1.000000 Stamp=[16] Truth: frequency=1.000000, confidence=0.900000
+Revised: <{Object_D} --> [not_hidden]>. Priority=1.000000 Stamp=[4,16,5] Truth: frequency=1.000000, confidence=0.964286
+Selected: <{Object_E Object_A} --> [active]>. Priority=0.271147 Stamp=[3,2] Truth: frequency=1.000000, confidence=0.810000
+Input: <{Signal_1} --> [active]>. Priority=1.000000 Stamp=[17] Truth: frequency=1.000000, confidence=0.900000
+Revised: <{Signal_1} --> [active]>. Priority=1.000000 Stamp=[8,17] Truth: frequency=1.000000, confidence=0.947368
+Selected: <{Signal_1} --> [active]>. Priority=1.000000 Stamp=[17] Truth: frequency=1.000000, confidence=0.900000
+Derived: <{Signal_1} --> {Signal_1}>. Priority=1.000000 Stamp=[8,12,17,8,2] Truth: frequency=1.000000, confidence=0.272009
+Derived: <[active] --> {Object_A}>. Priority=0.010656 Stamp=[17,8,2] Truth: frequency=1.000000, confidence=0.287121
+Derived: <{Object_A} <-> [active]>. Priority=0.010656 Stamp=[17,8,2] Truth: frequency=1.000000, confidence=0.287121
+Derived: <[active] <-> {Object_A}>. Priority=0.010656 Stamp=[17,8,2] Truth: frequency=1.000000, confidence=0.287121
+Derived: <<{$1} --> {Object_A}> ==> <{$1} --> [active]>>. Priority=0.007992 Stamp=[17,8,2] Truth: frequency=1.000000, confidence=0.287121
+Derived: <<{$1} --> [active]> ==> <{$1} --> {Object_A}>>. Priority=0.007992 Stamp=[17,8,2] Truth: frequency=1.000000, confidence=0.287121
+Derived: <<{Signal_1 Object_A} --> [$1]> ==> <{Signal_1} --> [$1]>>. Priority=0.011037 Stamp=[17,8,2] Truth: frequency=1.000000, confidence=0.421631
+Derived: <<{Signal_1} --> [$1]> ==> <{Signal_1 Object_A} --> [$1]>>. Priority=0.011037 Stamp=[17,8,2] Truth: frequency=1.000000, confidence=0.421631
+Derived: <<{Object_A Signal_1} --> [$1]> ==> <{Signal_1} --> [$1]>>. Priority=0.011037 Stamp=[17,8,2] Truth: frequency=1.000000, confidence=0.421631
+Derived: <<{Signal_1} --> [$1]> ==> <{Object_A Signal_1} --> [$1]>>. Priority=0.011037 Stamp=[17,8,2] Truth: frequency=1.000000, confidence=0.421631
+Derived: <[active] --> {Object_E}>. Priority=0.011840 Stamp=[17,8,3] Truth: frequency=1.000000, confidence=0.287121
+Derived: <{Object_E} <-> [active]>. Priority=0.011840 Stamp=[17,8,3] Truth: frequency=1.000000, confidence=0.287121
+Derived: <[active] <-> {Object_E}>. Priority=0.011840 Stamp=[17,8,3] Truth: frequency=1.000000, confidence=0.287121
+Derived: <<{$1} --> {Object_E}> ==> <{$1} --> [active]>>. Priority=0.008880 Stamp=[17,8,3] Truth: frequency=1.000000, confidence=0.287121
+Derived: <<{$1} --> [active]> ==> <{$1} --> {Object_E}>>. Priority=0.008880 Stamp=[17,8,3] Truth: frequency=1.000000, confidence=0.287121
+Derived: <<{Signal_1 Object_E} --> [$1]> ==> <{Signal_1} --> [$1]>>. Priority=0.012264 Stamp=[17,8,3] Truth: frequency=1.000000, confidence=0.421631
+Derived: <<{Signal_1} --> [$1]> ==> <{Signal_1 Object_E} --> [$1]>>. Priority=0.012264 Stamp=[17,8,3] Truth: frequency=1.000000, confidence=0.421631
+Derived: <<{Object_E Signal_1} --> [$1]> ==> <{Signal_1} --> [$1]>>. Priority=0.012264 Stamp=[17,8,3] Truth: frequency=1.000000, confidence=0.421631
+Derived: <<{Signal_1} --> [$1]> ==> <{Object_E Signal_1} --> [$1]>>. Priority=0.012264 Stamp=[17,8,3] Truth: frequency=1.000000, confidence=0.421631
+Derived: <<{$1} --> {Object_E Object_A}> ==> <{$1} --> [active]>>. Priority=0.002346 Stamp=[17,8,3,2] Truth: frequency=1.000000, confidence=0.275083
+Derived: <<{$1} --> [active]> ==> <{$1} --> {Object_E Object_A}>>. Priority=0.002346 Stamp=[17,8,3,2] Truth: frequency=1.000000, confidence=0.275083
+Derived: <<{Signal_1 (Object_E . Object_A)} --> [$1]> ==> <{Signal_1} --> [$1]>>. Priority=0.002706 Stamp=[17,8,3,2] Truth: frequency=1.000000, confidence=0.396172
+Derived: <<{Signal_1} --> [$1]> ==> <{Signal_1 (Object_E . Object_A)} --> [$1]>>. Priority=0.002706 Stamp=[17,8,3,2] Truth: frequency=1.000000, confidence=0.396172
+Derived: <<{(Object_E . Object_A) Signal_1} --> [$1]> ==> <{Signal_1} --> [$1]>>. Priority=0.002706 Stamp=[17,8,3,2] Truth: frequency=1.000000, confidence=0.396172
+Derived: <<{Signal_1} --> [$1]> ==> <{(Object_E . Object_A) Signal_1} --> [$1]>>. Priority=0.002706 Stamp=[17,8,3,2] Truth: frequency=1.000000, confidence=0.396172
+Derived: <<{$1} --> {Object_A Object_E}> ==> <{$1} --> [active]>>. Priority=0.003970 Stamp=[17,8,3,2] Truth: frequency=1.000000, confidence=0.275083
+Derived: <<{$1} --> [active]> ==> <{$1} --> {Object_A Object_E}>>. Priority=0.003970 Stamp=[17,8,3,2] Truth: frequency=1.000000, confidence=0.275083
+Derived: <<{Signal_1 (Object_A . Object_E)} --> [$1]> ==> <{Signal_1} --> [$1]>>. Priority=0.004580 Stamp=[17,8,3,2] Truth: frequency=1.000000, confidence=0.396172
+Derived: <<{Signal_1} --> [$1]> ==> <{Signal_1 (Object_A . Object_E)} --> [$1]>>. Priority=0.004580 Stamp=[17,8,3,2] Truth: frequency=1.000000, confidence=0.396172
+Derived: <<{(Object_A . Object_E) Signal_1} --> [$1]> ==> <{Signal_1} --> [$1]>>. Priority=0.004580 Stamp=[17,8,3,2] Truth: frequency=1.000000, confidence=0.396172
+Derived: <<{Signal_1} --> [$1]> ==> <{(Object_A . Object_E) Signal_1} --> [$1]>>. Priority=0.004580 Stamp=[17,8,3,2] Truth: frequency=1.000000, confidence=0.396172
+Input: <{Signal_2} --> [not_blue]>. Priority=1.000000 Stamp=[18] Truth: frequency=1.000000, confidence=0.900000
+Selected: <{Signal_2} --> [not_blue]>. Priority=1.000000 Stamp=[18] Truth: frequency=1.000000, confidence=0.900000
+Derived: <{Object_B} --> [not_blue]>. Priority=1.000000 Stamp=[18,10,1,9,7] Truth: frequency=1.000000, confidence=0.418164
+Derived: <{Object_A} --> {Object_A}>. Priority=1.000000 Stamp=[2,17,13,8,12,2] Truth: frequency=1.000000, confidence=0.276867
+Derived: <{Object_E} --> {Object_E Object_A}>. Priority=1.000000 Stamp=[3,17,8,3,2] Truth: frequency=1.000000, confidence=0.247575
+Derived: <{Object_A} --> {Object_E Object_A}>. Priority=1.000000 Stamp=[2,17,13,8,12,3,2] Truth: frequency=1.000000, confidence=0.265258
+Derived: <{Object_E} --> {Object_A Object_E}>. Priority=1.000000 Stamp=[3,17,8,3,2] Truth: frequency=1.000000, confidence=0.247575
+Derived: <{Object_A} --> {Object_A Object_E}>. Priority=1.000000 Stamp=[2,17,13,8,12,3,2] Truth: frequency=1.000000, confidence=0.265258
+Derived: <[blue] --> [not_blue]>. Priority=0.103851 Stamp=[18,10] Truth: frequency=1.000000, confidence=0.447514
+Derived: <[not_blue] --> [blue]>. Priority=0.103851 Stamp=[18,10] Truth: frequency=1.000000, confidence=0.447514
+Derived: <[blue] <-> [not_blue]>. Priority=0.103851 Stamp=[18,10] Truth: frequency=1.000000, confidence=0.447514
+Derived: <[not_blue] <-> [blue]>. Priority=0.103851 Stamp=[18,10] Truth: frequency=1.000000, confidence=0.447514
+Derived: <{Signal_2} --> [not_blue blue]>. Priority=0.129858 Stamp=[18,10] Truth: frequency=1.000000, confidence=0.810000
+Derived: <{Signal_2} --> [blue not_blue]>. Priority=0.129858 Stamp=[18,10] Truth: frequency=1.000000, confidence=0.810000
+Derived: <<{$1} --> [blue]> ==> <{$1} --> [not_blue]>>. Priority=0.077888 Stamp=[18,10] Truth: frequency=1.000000, confidence=0.447514
+Derived: <<{$1} --> [not_blue]> ==> <{$1} --> [blue]>>. Priority=0.077888 Stamp=[18,10] Truth: frequency=1.000000, confidence=0.447514
+Derived: <<{$1} --> {Object_B}> ==> <{$1} --> [not_blue]>>. Priority=0.015307 Stamp=[18,10,1,9,7] Truth: frequency=1.000000, confidence=0.294863
+Derived: <<{$1} --> [not_blue]> ==> <{$1} --> {Object_B}>>. Priority=0.015307 Stamp=[18,10,1,9,7] Truth: frequency=1.000000, confidence=0.294863
+Input: <{Object_A} --> [not_active]>. Priority=1.000000 Stamp=[19] Truth: frequency=1.000000, confidence=0.900000
+Selected: <{Object_A} --> [not_active]>. Priority=1.000000 Stamp=[19] Truth: frequency=1.000000, confidence=0.900000
+Derived: <{Object_E} --> [not_active]>. Priority=1.000000 Stamp=[19,3,2] Truth: frequency=1.000000, confidence=0.402762
+Derived: <{Object_A Object_E} --> [not_active]>. Priority=1.000000 Stamp=[19,12,3,2] Truth: frequency=1.000000, confidence=0.379468
+Derived: <{Signal_1 (Object_A . Object_E)} --> [not_active]>. Priority=1.000000 Stamp=[19,12,8,3,2] Truth: frequency=1.000000, confidence=0.356555
+Derived: <{Object_B} --> [not_blue]>. Priority=1.000000 Stamp=[1,18,14,10,9,7] Truth: frequency=1.000000, confidence=0.435419
+Derived: <{Signal_1 Object_A} --> [not_active]>. Priority=1.000000 Stamp=[19,12,8,2] Truth: frequency=1.000000, confidence=0.379468
+Derived: <{(Object_E . Object_A) Signal_1} --> [not_active]>. Priority=1.000000 Stamp=[19,12,8,3,2] Truth: frequency=1.000000, confidence=0.356555
+Derived: <{Signal_1 (Object_E . Object_A)} --> [not_active]>. Priority=1.000000 Stamp=[19,12,8,3,2] Truth: frequency=1.000000, confidence=0.356555
+Derived: <{Object_E Object_A} --> [not_active]>. Priority=1.000000 Stamp=[19,12,3,2] Truth: frequency=1.000000, confidence=0.379468
+Derived: <{Object_B} --> {Object_B}>. Priority=1.000000 Stamp=[1,18,18,10,14,1,10,9,9,7] Truth: frequency=1.000000, confidence=0.128389
+Derived: <{(Object_A . Object_E) Signal_1} --> [not_active]>. Priority=1.000000 Stamp=[19,12,8,3,2] Truth: frequency=1.000000, confidence=0.356555
+Derived: <{Object_A Signal_1} --> [not_active]>. Priority=1.000000 Stamp=[19,12,8,2] Truth: frequency=1.000000, confidence=0.379468
+Derived: <{Signal_1} --> [not_active]>. Priority=1.000000 Stamp=[19,8,2] Truth: frequency=1.000000, confidence=0.402762
+Derived: <[active] --> [not_active]>. Priority=0.129727 Stamp=[19,2,13,12] Truth: frequency=1.000000, confidence=0.464627
+Derived: <[not_active] --> [active]>. Priority=0.129727 Stamp=[19,2,13,12] Truth: frequency=1.000000, confidence=0.464627
+Derived: <[active] <-> [not_active]>. Priority=0.129727 Stamp=[19,2,13,12] Truth: frequency=1.000000, confidence=0.464627
+Derived: <[not_active] <-> [active]>. Priority=0.129727 Stamp=[19,2,13,12] Truth: frequency=1.000000, confidence=0.464627
+Derived: <{Object_A} --> [not_active active]>. Priority=0.165443 Stamp=[19,2,13,12] Truth: frequency=1.000000, confidence=0.867857
+Derived: <{Object_A} --> [active not_active]>. Priority=0.165443 Stamp=[19,2,13,12] Truth: frequency=1.000000, confidence=0.867857
+Derived: <<{$1} --> [active]> ==> <{$1} --> [not_active]>>. Priority=0.097295 Stamp=[19,2,13,12] Truth: frequency=1.000000, confidence=0.464627
+Derived: <<{$1} --> [not_active]> ==> <{$1} --> [active]>>. Priority=0.097295 Stamp=[19,2,13,12] Truth: frequency=1.000000, confidence=0.464627
+Derived: <<{$1} --> {Object_E}> ==> <{$1} --> [not_active]>>. Priority=0.006473 Stamp=[19,3,2] Truth: frequency=1.000000, confidence=0.287121
+Derived: <<{$1} --> [not_active]> ==> <{$1} --> {Object_E}>>. Priority=0.006473 Stamp=[19,3,2] Truth: frequency=1.000000, confidence=0.287121
+Derived: <<{$1} --> {Signal_1}> ==> <{$1} --> [not_active]>>. Priority=0.006473 Stamp=[19,8,2] Truth: frequency=1.000000, confidence=0.287121
+Derived: <<{$1} --> [not_active]> ==> <{$1} --> {Signal_1}>>. Priority=0.006473 Stamp=[19,8,2] Truth: frequency=1.000000, confidence=0.287121
+Input: <{Signal_1} --> [not_active]>. Priority=1.000000 Stamp=[20] Truth: frequency=1.000000, confidence=0.900000
+Revised: <{Signal_1} --> [not_active]>. Priority=1.000000 Stamp=[19,20,8,2] Truth: frequency=1.000000, confidence=0.906318
+Selected: <{Signal_1} --> [not_active]>. Priority=1.000000 Stamp=[20] Truth: frequency=1.000000, confidence=0.900000
+Derived: <{Object_E} --> [not_active]>. Priority=1.000000 Stamp=[19,8,20,3,8,2] Truth: frequency=1.000000, confidence=0.405590
+Derived: <{Object_E} --> [not_active]>. Priority=1.000000 Stamp=[3,19,2,13,12] Truth: frequency=1.000000, confidence=0.418164
+Derived: <{Object_E Object_A} --> [not_active]>. Priority=1.000000 Stamp=[19,8,20,3,8,2,2] Truth: frequency=1.000000, confidence=0.382132
+Derived: <{(Object_E . Object_A) Signal_1} --> [not_active]>. Priority=1.000000 Stamp=[19,17,20,8,8,3,2,2] Truth: frequency=1.000000, confidence=0.359057
+Derived: <{Signal_1 (Object_A . Object_E)} --> [not_active]>. Priority=1.000000 Stamp=[19,17,20,8,8,3,2,2] Truth: frequency=1.000000, confidence=0.359057
+Derived: <{(Object_A . Object_E) Signal_1} --> [not_active]>. Priority=1.000000 Stamp=[19,17,20,8,8,3,2,2] Truth: frequency=1.000000, confidence=0.359057
+Derived: <{Object_A Signal_1} --> [not_active]>. Priority=1.000000 Stamp=[19,17,20,8,8,2,2] Truth: frequency=1.000000, confidence=0.382132
+Derived: <{Signal_1 (Object_E . Object_A)} --> [not_active]>. Priority=1.000000 Stamp=[19,17,20,8,8,3,2,2] Truth: frequency=1.000000, confidence=0.359057
+Derived: <{Object_E Signal_1} --> [not_active]>. Priority=1.000000 Stamp=[19,17,20,8,8,3,2] Truth: frequency=1.000000, confidence=0.382132
+Derived: <{Signal_1 Object_E} --> [not_active]>. Priority=1.000000 Stamp=[19,17,20,8,8,3,2] Truth: frequency=1.000000, confidence=0.382132
+Derived: <{Object_A Object_E} --> [not_active]>. Priority=1.000000 Stamp=[19,3,20,8,8,2,2] Truth: frequency=1.000000, confidence=0.382132
+Derived: <{Signal_1 Object_A} --> [not_active]>. Priority=1.000000 Stamp=[19,17,20,8,8,2,2] Truth: frequency=1.000000, confidence=0.382132
+Revised: <[active] --> [not_active]>. Priority=0.177418 Stamp=[19,20,2,8,13,17,12] Truth: frequency=1.000000, confidence=0.632419
+Revised: <[not_active] --> [active]>. Priority=0.177418 Stamp=[19,20,2,8,13,17,12] Truth: frequency=1.000000, confidence=0.632419
+Revised: <[active] <-> [not_active]>. Priority=0.177418 Stamp=[19,20,2,8,13,17,12] Truth: frequency=1.000000, confidence=0.632419
+Revised: <[not_active] <-> [active]>. Priority=0.177418 Stamp=[19,20,2,8,13,17,12] Truth: frequency=1.000000, confidence=0.632419
+Derived: <{Signal_1} --> [not_active active]>. Priority=0.225095 Stamp=[20,8,17] Truth: frequency=1.000000, confidence=0.852632
+Derived: <{Signal_1} --> [active not_active]>. Priority=0.225095 Stamp=[20,8,17] Truth: frequency=1.000000, confidence=0.852632
+Derived: <<{$1} --> [active]> ==> <{$1} --> [not_active]>>. Priority=0.133063 Stamp=[20,8,17] Truth: frequency=1.000000, confidence=0.460227
+Revised: <<{$1} --> [active]> ==> <{$1} --> [not_active]>>. Priority=0.133063 Stamp=[19,20,2,8,13,17,12] Truth: frequency=1.000000, confidence=0.632419
+Derived: <<{$1} --> [not_active]> ==> <{$1} --> [active]>>. Priority=0.133063 Stamp=[20,8,17] Truth: frequency=1.000000, confidence=0.460227
+Revised: <<{$1} --> [not_active]> ==> <{$1} --> [active]>>. Priority=0.133063 Stamp=[19,20,2,8,13,17,12] Truth: frequency=1.000000, confidence=0.632419
+Revised: <{Object_A} --> [not_active]>. Priority=0.008466 Stamp=[19,20,8,2] Truth: frequency=1.000000, confidence=0.906318
+Derived: <<{$1} --> {Object_A}> ==> <{$1} --> [not_active]>>. Priority=0.005826 Stamp=[20,8,2] Truth: frequency=1.000000, confidence=0.287121
+Derived: <<{$1} --> [not_active]> ==> <{$1} --> {Object_A}>>. Priority=0.005826 Stamp=[20,8,2] Truth: frequency=1.000000, confidence=0.287121
+Derived: <<{$1} --> {Object_E}> ==> <{$1} --> [not_active]>>. Priority=0.006473 Stamp=[20,8,3] Truth: frequency=1.000000, confidence=0.287121
+Derived: <<{$1} --> [not_active]> ==> <{$1} --> {Object_E}>>. Priority=0.006473 Stamp=[20,8,3] Truth: frequency=1.000000, confidence=0.287121
+Derived: <<{$1} --> {Object_E Object_A}> ==> <{$1} --> [not_active]>>. Priority=0.001710 Stamp=[20,8,3,2] Truth: frequency=1.000000, confidence=0.275083
+Derived: <<{$1} --> [not_active]> ==> <{$1} --> {Object_E Object_A}>>. Priority=0.001710 Stamp=[20,8,3,2] Truth: frequency=1.000000, confidence=0.275083
+Derived: <<{$1} --> {Object_A Object_E}> ==> <{$1} --> [not_active]>>. Priority=0.002894 Stamp=[20,8,3,2] Truth: frequency=1.000000, confidence=0.275083
+Derived: <<{$1} --> [not_active]> ==> <{$1} --> {Object_A Object_E}>>. Priority=0.002894 Stamp=[20,8,3,2] Truth: frequency=1.000000, confidence=0.275083
+Input: <{Object_D} --> [not_hidden]>. Priority=1.000000 Stamp=[21] Truth: frequency=1.000000, confidence=0.900000
+Revised: <{Object_D} --> [not_hidden]>. Priority=1.000000 Stamp=[4,21,16,5] Truth: frequency=1.000000, confidence=0.972973
+Selected: <{Signal_1} --> [not_active active]>. Priority=0.225072 Stamp=[20,8,17] Truth: frequency=1.000000, confidence=0.852632
+Derived: <{Object_E} --> [not_active]>. Priority=1.000000 Stamp=[3,19,20,2,8,13,17,12] Truth: frequency=1.000000, confidence=0.569177
+Input: <{Signal_1} --> [active]>. Priority=1.000000 Stamp=[22] Truth: frequency=1.000000, confidence=0.900000
+Revised: <{Signal_1} --> [active]>. Priority=1.000000 Stamp=[8,22,17] Truth: frequency=1.000000, confidence=0.964286
+Selected: <{Signal_1} --> [active not_active]>. Priority=0.225050 Stamp=[20,8,17] Truth: frequency=1.000000, confidence=0.852632
+Derived: <{Signal_1} --> {Signal_1}>. Priority=1.000000 Stamp=[8,12,22,8,17,2] Truth: frequency=1.000000, confidence=0.276867
+Input: <{Object_G} --> [safe]>. Priority=1.000000 Stamp=[23] Truth: frequency=1.000000, confidence=0.900000
+Revised: <{Object_G} --> [safe]>. Priority=1.000000 Stamp=[11,23] Truth: frequency=1.000000, confidence=0.947368
+Selected: <{Object_G} --> [safe]>. Priority=1.000000 Stamp=[23] Truth: frequency=1.000000, confidence=0.900000
+Derived: <[safe] --> {Object_C}>. Priority=0.008631 Stamp=[23,11,6] Truth: frequency=1.000000, confidence=0.287121
+Derived: <{Object_C} <-> [safe]>. Priority=0.008631 Stamp=[23,11,6] Truth: frequency=1.000000, confidence=0.287121
+Derived: <[safe] <-> {Object_C}>. Priority=0.008631 Stamp=[23,11,6] Truth: frequency=1.000000, confidence=0.287121
+Derived: <<{$1} --> {Object_C}> ==> <{$1} --> [safe]>>. Priority=0.006473 Stamp=[23,11,6] Truth: frequency=1.000000, confidence=0.287121
+Derived: <<{$1} --> [safe]> ==> <{$1} --> {Object_C}>>. Priority=0.006473 Stamp=[23,11,6] Truth: frequency=1.000000, confidence=0.287121
+Derived: <<{Object_G Object_C} --> [$1]> ==> <{Object_G} --> [$1]>>. Priority=0.008940 Stamp=[23,11,6] Truth: frequency=1.000000, confidence=0.421631
+Derived: <<{Object_G} --> [$1]> ==> <{Object_G Object_C} --> [$1]>>. Priority=0.008940 Stamp=[23,11,6] Truth: frequency=1.000000, confidence=0.421631
+Derived: <<{Object_C Object_G} --> [$1]> ==> <{Object_G} --> [$1]>>. Priority=0.008940 Stamp=[23,11,6] Truth: frequency=1.000000, confidence=0.421631
+Derived: <<{Object_G} --> [$1]> ==> <{Object_C Object_G} --> [$1]>>. Priority=0.008940 Stamp=[23,11,6] Truth: frequency=1.000000, confidence=0.421631
+Derived: <{Object_C} --> {Object_G}>. Priority=0.040234 Stamp=[23,6] Truth: frequency=1.000000, confidence=0.447514
+Derived: <{Object_G} --> {Object_C}>. Priority=0.040234 Stamp=[23,6] Truth: frequency=1.000000, confidence=0.447514
+Derived: <{Object_C} <-> {Object_G}>. Priority=0.040234 Stamp=[23,6] Truth: frequency=1.000000, confidence=0.447514
+Derived: <{Object_G} <-> {Object_C}>. Priority=0.040234 Stamp=[23,6] Truth: frequency=1.000000, confidence=0.447514
+Derived: <{Object_G Object_C} --> [safe]>. Priority=0.050309 Stamp=[23,6] Truth: frequency=1.000000, confidence=0.810000
+Derived: <{Object_C Object_G} --> [safe]>. Priority=0.050309 Stamp=[23,6] Truth: frequency=1.000000, confidence=0.810000
+Derived: <<{Object_C} --> [$1]> ==> <{Object_G} --> [$1]>>. Priority=0.030176 Stamp=[23,6] Truth: frequency=1.000000, confidence=0.447514
+Derived: <<{Object_G} --> [$1]> ==> <{Object_C} --> [$1]>>. Priority=0.030176 Stamp=[23,6] Truth: frequency=1.000000, confidence=0.447514
+Input: <{Object_D} --> [hidden]>. Priority=1.000000 Stamp=[24] Truth: frequency=1.000000, confidence=0.900000
+Revised: <{Object_D} --> [hidden]>. Priority=1.000000 Stamp=[15,24] Truth: frequency=1.000000, confidence=0.947368
+Selected: <{Object_D} --> [hidden]>. Priority=1.000000 Stamp=[24] Truth: frequency=1.000000, confidence=0.900000
+Derived: <{Object_C} --> {Object_C}>. Priority=1.000000 Stamp=[6,23,11,6] Truth: frequency=1.000000, confidence=0.258409
+Derived: <[not_hidden] --> [hidden]>. Priority=0.178223 Stamp=[24,4,21,16,5] Truth: frequency=1.000000, confidence=0.466859
+Derived: <[hidden] --> [not_hidden]>. Priority=0.178223 Stamp=[24,4,21,16,5] Truth: frequency=1.000000, confidence=0.466859
+Derived: <[not_hidden] <-> [hidden]>. Priority=0.178223 Stamp=[24,4,21,16,5] Truth: frequency=1.000000, confidence=0.466859
+Derived: <[hidden] <-> [not_hidden]>. Priority=0.178223 Stamp=[24,4,21,16,5] Truth: frequency=1.000000, confidence=0.466859
+Derived: <{Object_D} --> [hidden not_hidden]>. Priority=0.227895 Stamp=[24,4,21,16,5] Truth: frequency=1.000000, confidence=0.875676
+Derived: <{Object_D} --> [not_hidden hidden]>. Priority=0.227895 Stamp=[24,4,21,16,5] Truth: frequency=1.000000, confidence=0.875676
+Derived: <<{$1} --> [not_hidden]> ==> <{$1} --> [hidden]>>. Priority=0.133668 Stamp=[24,4,21,16,5] Truth: frequency=1.000000, confidence=0.466859
+Derived: <<{$1} --> [hidden]> ==> <{$1} --> [not_hidden]>>. Priority=0.133668 Stamp=[24,4,21,16,5] Truth: frequency=1.000000, confidence=0.466859

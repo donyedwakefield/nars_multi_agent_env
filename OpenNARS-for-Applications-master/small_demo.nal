@@ -1,0 +1,59 @@
+' source=truthful_1 fact=fact_4 step=1
+<{Object_D} --> [blue]>. %1.00;0.90%
+
+' source=deceptive_1 fact=fact_4 step=1
+<{Object_D} --> [not_blue]>. %1.00;0.90%
+
+' source=noisy_1 fact=fact_2 step=1
+<{Object_B} --> [not_inactive]>. %1.00;0.90%
+
+' source=strategic_1 fact=fact_5 step=1
+<{Signal_1} --> [open]>. %1.00;0.90%
+
+' source=truthful_1 fact=fact_2 step=2
+<{Object_B} --> [inactive]>. %1.00;0.90%
+
+' source=deceptive_1 fact=fact_2 step=2
+<{Object_B} --> [not_inactive]>. %1.00;0.90%
+
+' source=noisy_1 fact=fact_2 step=2
+<{Object_B} --> [inactive]>. %1.00;0.90%
+
+' source=strategic_1 fact=fact_2 step=2
+<{Object_B} --> [not_inactive]>. %1.00;0.90%
+
+' source=truthful_1 fact=fact_1 step=3
+<{Object_A} --> [active]>. %1.00;0.90%
+
+' source=deceptive_1 fact=fact_3 step=3
+<{Object_C} --> [red]>. %1.00;0.90%
+
+' source=noisy_1 fact=fact_6 step=3
+<{Signal_2} --> [not_closed]>. %1.00;0.90%
+
+' source=strategic_1 fact=fact_4 step=3
+<{Object_D} --> [not_blue]>. %1.00;0.90%
+
+' source=truthful_1 fact=fact_5 step=4
+<{Signal_1} --> [open]>. %1.00;0.90%
+
+' source=deceptive_1 fact=fact_6 step=4
+<{Signal_2} --> [not_closed]>. %1.00;0.90%
+
+' source=noisy_1 fact=fact_6 step=4
+<{Signal_2} --> [closed]>. %1.00;0.90%
+
+' source=strategic_1 fact=fact_5 step=4
+<{Signal_1} --> [open]>. %1.00;0.90%
+
+' source=truthful_1 fact=fact_1 step=5
+<{Object_A} --> [active]>. %1.00;0.90%
+
+' source=deceptive_1 fact=fact_5 step=5
+<{Signal_1} --> [not_open]>. %1.00;0.90%
+
+' source=noisy_1 fact=fact_4 step=5
+<{Object_D} --> [blue]>. %1.00;0.90%
+
+' source=strategic_1 fact=fact_2 step=5
+<{Object_B} --> [inactive]>. %1.00;0.90%
