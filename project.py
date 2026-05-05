@@ -2,6 +2,7 @@ from __future__ import annotations
 
 
 import json
+import os
 import queue
 import random
 import re
@@ -1212,12 +1213,38 @@ def run_large_experiment(
 
 # Entry point — tweak paths here for your machine
 
-# OpenNARS-for-Applications checkout: the `NAR shell` combo accepts stdin line by line.
-_ONA_HOME = (
-    "/Users/donyewakefield/Desktop/cs_graduate/Spring 2026/Artificial General Intelligence/"
-    "project/implementation/OpenNARS-for-Applications-master"
+
+def _default_ona_install_dir() -> Path:
+    """Where a typical clone of ONA sits if you put it next to this script."""
+    return Path(__file__).resolve().parent / "OpenNARS-for-Applications-master"
+
+
+def resolve_ona_home() -> Optional[str]:
+    """
+    Pick an OpenNARS-for-Applications root that contains the `NAR` launcher.
+
+    Order: ONA_HOME, then OPENNARS_HOME, then a folder named OpenNARS-for-Applications-master
+    alongside project.py. If none of those work, returns None so the rest of the script still runs
+    without Java/ONA (your professor does not need your laptop's /Users/... path).
+    """
+    roots: List[Path] = []
+    for key in ("ONA_HOME", "OPENNARS_HOME"):
+        v = os.environ.get(key)
+        if v:
+            roots.append(Path(v).expanduser().resolve())
+    roots.append(_default_ona_install_dir())
+    for root in roots:
+        nar = root / "NAR"
+        if root.is_dir() and nar.exists():
+            return str(root)
+    return None
+
+
+_ONA_HOME = resolve_ona_home()
+# `NAR shell` is the stdin-friendly entry point for piping judgments.
+NARS_COMMAND: Optional[List[str]] = (
+    [f"{_ONA_HOME}/NAR", "shell"] if _ONA_HOME is not None else None
 )
-NARS_COMMAND: Optional[List[str]] = [f"{_ONA_HOME}/NAR", "shell"]
 
 # Set ONA_PLOT_PREFIX to None to skip PNGs; filenames get that prefix in _plot_output_path.
 ONA_PLOT_PREFIX: Optional[str] = "ona_experiment"
@@ -1274,7 +1301,7 @@ def main() -> None:
 
     save_narsese_experiment_file(statements, "small_demo.nal", confidence=0.90)
 
-    # --- Heavier run: same statements also go through ONA with stepped logging ---
+    # --- Heavier run: optionally pipes the same stream into ONA (needs `NAR` on disk or ONA_HOME). ---
     ona_statements, ona_tracker, ona_metrics = run_large_experiment(
         num_facts=10,
         num_steps=24,
@@ -1286,7 +1313,14 @@ def main() -> None:
         nars_stepped_statement_timeout=0.5,
     )
 
-    print(f"\n=== ONA run — same {len(ona_statements)} judgments as above tracker ===")
+    if NARS_COMMAND:
+        print(f"\n=== ONA run — same {len(ona_statements)} judgments as above tracker ===")
+    else:
+        print(
+            f"\n=== Large sim (Python only) — {len(ona_statements)} judgments ===\n"
+            "ONA was skipped: no `NAR` launcher found. Your grader can set ONA_HOME to their checkout, "
+            "or clone OpenNARS-for-Applications next to project.py under the default folder name."
+        )
     print("=== Belief summary (Python tracker on that stream) ===")
     for row in ona_tracker.belief_summary():
         print(row)
@@ -1317,16 +1351,17 @@ def main() -> None:
     print(f"\nStepped interaction log (JSON): {inter_path}")
 
     nars_lines: List[str] = list(ona_metrics.get("nars_output", []))
-    if ONA_ENGINE_LOG_PATH:
-        with open(ONA_ENGINE_LOG_PATH, "w", encoding="utf-8") as logf:
-            logf.write("\n".join(nars_lines))
-        print(f"\nONA stdout also saved to {ONA_ENGINE_LOG_PATH} ({len(nars_lines)} lines).")
+    if nars_lines:
+        if ONA_ENGINE_LOG_PATH:
+            with open(ONA_ENGINE_LOG_PATH, "w", encoding="utf-8") as logf:
+                logf.write("\n".join(nars_lines))
+            print(f"\nONA stdout also saved to {ONA_ENGINE_LOG_PATH} ({len(nars_lines)} lines).")
 
-    print("\n=== ONA engine stdout (first 40 lines; rest in log file) ===")
-    for line in nars_lines[:40]:
-        print(line)
-    if len(nars_lines) > 40:
-        print(f"... ({len(nars_lines) - 40} more lines in log file)")
+        print("\n=== ONA engine stdout (first 40 lines; rest in log file) ===")
+        for line in nars_lines[:40]:
+            print(line)
+        if len(nars_lines) > 40:
+            print(f"... ({len(nars_lines) - 40} more lines in log file)")
 
     # Savefig path is absolute so running from another cwd still drops PNGs next to this file.
     if ONA_PLOT_PREFIX:
