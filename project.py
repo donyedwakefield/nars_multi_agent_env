@@ -1225,7 +1225,7 @@ def resolve_ona_home() -> Optional[str]:
 
     Order: ONA_HOME, then OPENNARS_HOME, then a folder named OpenNARS-for-Applications-master
     alongside project.py. If none of those work, returns None so the rest of the script still runs
-    without Java/ONA (your professor does not need your laptop's /Users/... path).
+    without Java/ONA.
     """
     roots: List[Path] = []
     for key in ("ONA_HOME", "OPENNARS_HOME"):
@@ -1388,8 +1388,9 @@ def main() -> None:
                 print(f"\nWrote NARS plot ({Path(p).stat().st_size} bytes): {p}")
     if ONA_PLOT_PREFIX and rel_png and all_png:
         for p in (rel_png, all_png):
-            sz = Path(p).stat().st_size
-            print(f"\nWrote plot ({sz} bytes): {p}")
+            # visualize_* returns without savefig if mpl is missing or there is nothing to draw.
+            if Path(p).is_file():
+                print(f"\nWrote plot ({Path(p).stat().st_size} bytes): {p}")
 
 if __name__ == "__main__":
     main()
